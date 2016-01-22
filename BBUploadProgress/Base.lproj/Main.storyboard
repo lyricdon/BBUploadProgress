@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mq1-Sb-Mu4">
+                                <rect key="frame" x="90" y="69" width="240" height="240"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prePic" translatesAutoresizingMaskIntoConstraints="NO" id="GLO-ul-hXp">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="1JY-AL-b7N"/>
+                                    <constraint firstItem="GLO-ul-hXp" firstAttribute="leading" secondItem="Mq1-Sb-Mu4" secondAttribute="leading" id="7lc-Al-YLW"/>
+                                    <constraint firstAttribute="height" constant="240" id="9pc-PR-GKW"/>
+                                    <constraint firstAttribute="bottom" secondItem="GLO-ul-hXp" secondAttribute="bottom" id="VqM-sd-J5G"/>
+                                    <constraint firstAttribute="trailing" secondItem="GLO-ul-hXp" secondAttribute="trailing" id="kV6-eu-wxc"/>
+                                    <constraint firstItem="GLO-ul-hXp" firstAttribute="top" secondItem="Mq1-Sb-Mu4" secondAttribute="top" id="vmm-fP-S5g"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vP-Ju-iHS">
+                                <rect key="frame" x="180" y="346" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.71764705880000002" green="0.1450980392" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HEh-SI-3Ay"/>
+                                    <constraint firstAttribute="width" constant="60" id="YFR-cr-MQY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="成功示例">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="successUpload" destination="BYZ-38-t0r" eventType="touchUpInside" id="PGh-oU-gIA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McX-op-zfq">
+                                <rect key="frame" x="180" y="397" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.71764705880000002" green="0.1450980392" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ypT-5B-XA9"/>
+                                    <constraint firstAttribute="width" constant="60" id="zoP-sq-W5g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="失败示例">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="failureUpload" destination="BYZ-38-t0r" eventType="touchUpInside" id="f02-KQ-Ns4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="McX-op-zfq" firstAttribute="top" secondItem="3vP-Ju-iHS" secondAttribute="bottom" constant="21" id="7fY-6s-Cd3"/>
+                            <constraint firstItem="Mq1-Sb-Mu4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="OnW-5S-Oet"/>
+                            <constraint firstItem="3vP-Ju-iHS" firstAttribute="centerX" secondItem="GLO-ul-hXp" secondAttribute="centerX" id="YyT-cU-FTJ"/>
+                            <constraint firstItem="3vP-Ju-iHS" firstAttribute="top" secondItem="Mq1-Sb-Mu4" secondAttribute="bottom" constant="37" id="e0g-En-QzF"/>
+                            <constraint firstItem="Mq1-Sb-Mu4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="90" id="j5E-4d-9cV"/>
+                            <constraint firstItem="McX-op-zfq" firstAttribute="centerX" secondItem="3vP-Ju-iHS" secondAttribute="centerX" id="kyn-ue-WtQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="GLO-ul-hXp" id="y5b-rH-Iax"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="prePic" width="200" height="200"/>
+    </resources>
+</document>
